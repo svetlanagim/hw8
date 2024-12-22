@@ -63,8 +63,8 @@ body {
     text-align: center;
     color: #212121;
     margin-bottom: 50px;
-
 }
+
 /* Header */
 .header {
     padding: 25px 0;
@@ -99,7 +99,6 @@ body {
 .header_list {
     display: flex;
     gap: 50px;
-
 }
 
 .header_contacts {
@@ -172,18 +171,19 @@ body {
 
 /* Doing */
 .doing {
-padding: 0 94px;
+    padding: 0 94px;
 }
 
 .doing_cards {
     display: flex;
     position: relative;
 }
+
 .doing_card {
     flex: 1 1 33%;
     width: 100%;
-	height: 294px;
-	object-fit: cover;
+    height: 294px;
+    object-fit: cover;
 }
 
 /* Team */
@@ -191,38 +191,42 @@ padding: 0 94px;
     padding: 94px 0;
     background: #f5f4fa;
 }
+
 .team_cards {
     display: flex;
     gap: 30px;
     position: relative;
     width: 270px;
-height: 368px;
+    height: 368px;
 
 }
+
 .team_card {
     border-radius: 0 0 4px 4px;
     width: 270px;
     height: 368px;
     background: #fff;
     font-size: 16px;
-letter-spacing: 3%;
-text-align: center;
+    letter-spacing: 3%;
+    text-align: center;
 }
+
 .team_img {
     width: 270px;
-height: 260px;
-object-fit: cover;
-margin-bottom: 30px;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 30px;
 }
+
 .team_name {
-font-weight: 500;
-color: #212121;
-margin-bottom: 10px;
+    font-weight: 500;
+    color: #212121;
+    margin-bottom: 10px;
 }
 
 .team_prof {
-font-weight: 400;
-color: #757575;
+    font-weight: 400;
+    color: #757575;
 }
 
 /* Footer */
@@ -241,15 +245,17 @@ color: #757575;
     width: 145px;
     height: 31px;
 }
+
 .fotter_adress {
     color: #fff;
 }
+
 .footer_contacts {
     margin-top: 20px;
     line-height: 24px;
 }
 
-.footer_contacts a{
+.footer_contacts a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
