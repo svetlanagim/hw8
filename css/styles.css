@@ -295,12 +295,14 @@ body {
 .project {
     background: #fff;
     margin-bottom: 94px;
+    
 }
 
 .project_cards {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project_card {
