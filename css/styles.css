@@ -296,13 +296,15 @@ body {
 
 .project_cards {
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .project_card {
-    flex: 1 1 33%;
-    width: 370px;
+    flex: 0 0 30%;
+    width: 370%;
     height: 404px;
+    border: 1px solid #eeeeee;
 }
 
 .project_title {
@@ -311,6 +313,7 @@ body {
 
 .project_img {
     object-fit: cover;
+    width: 100%;
 }
 
 .project_name {
