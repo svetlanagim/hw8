@@ -209,6 +209,9 @@ body {
     font-size: 16px;
     letter-spacing: 3%;
     text-align: center;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 0 0 4px 4px;
+
 }
 
 .team_img {
@@ -330,5 +333,4 @@ body {
     letter-spacing: 3%;
     color: #757575;
     line-height: 30px;
-
 }
