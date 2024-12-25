@@ -183,11 +183,13 @@ body {
     flex: 1 1 33%;
     position: relative;
 }
+
 .doing_img {
     width: 100%;
     height: 294px;
     object-fit: cover;
 }
+
 .doing_card_title {
     height: 70px;
     background: rgba(47, 48, 58, .8);
@@ -203,6 +205,7 @@ body {
     width: 100%;
     opacity: 0;
 }
+
 .doing_card:hover .doing_card_title {
     opacity: 1;
 }
@@ -233,9 +236,11 @@ body {
     height: 260px;
     object-fit: cover;
 }
+
 .team_title {
     padding: 24px;
 }
+
 .team_name {
     font-weight: 500;
     color: #212121;
@@ -291,6 +296,7 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
 }
 
 .filters a:hover {
@@ -306,6 +312,7 @@ body {
     color: #212121;
     background: #f5f4fa;
     line-height: 28px;
+    padding: 6px 27px;
 }
 
 /* project */
@@ -324,7 +331,30 @@ body {
 .project_card {
     flex: 1 1 30%;
     border: 1px solid #eeeeee;
+}
+
+.project_card_box {
+    height: 294px;
     position: relative;
+}
+
+.project_card_title {
+    background: rgba(33, 150, 243, 0.9);
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.project_card:hover .project_card_title {
+    opacity: 1;
 }
 
 .project_title {
@@ -334,27 +364,9 @@ body {
 .project_img {
     object-fit: cover;
     width: 100%;
+    height: 100%;
 }
-.project_card_title {
-    height: 294px;
-    background: rgba(33, 150, 243, 0.9);
-    font-weight: 400;
-font-size: 18px;
-line-height: 1.55556;
-letter-spacing: 0.03em;
-color: #fff;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 24px;
-position: absolute;
-top: 0;
-left: 0;
-opacity: 0;
-}
-.project_card:hover .project_card_title {
-    opacity: 1;
-}
+
 .project_name {
     font-weight: 700;
     font-size: 18px;
