@@ -109,6 +109,48 @@ body {
     color: #757575;
 }
 
+.header_sub {
+    position: relative;
+}
+.header_submenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+    right: 0;
+    text-align: center;
+	display: none;
+}
+.header_sub:hover .header_submenu {
+    display: block;
+}
+.header_submenu_item {
+    position: relative;
+}
+.header_submenu_2 {
+    position: absolute;
+	top: 0;
+	left: -100%;
+    right: 100%;
+    text-align: center;
+	display: none;
+}
+.header_submenu_item:hover .header_submenu_2 {
+    display: block;
+}
+.header_submenu_item a {
+	color: #000000;
+	padding: 5px;
+	display: block;
+    background: rgba(33, 150, 243, 0.3);
+}
+
+.header_submenu_hover a {
+    color: #000000;
+	padding: 5px;
+	display: block;
+    background: rgba(87, 170, 237, 0.3);
+}
+
 /* Hero */
 .hero {
     height: 600px;
@@ -192,7 +234,7 @@ body {
 
 .doing_card_title {
     height: 70px;
-    background: rgba(47, 48, 58, .8);
+    background: rgba(47, 48, 58, 0.8);
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
