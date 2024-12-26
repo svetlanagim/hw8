@@ -116,7 +116,6 @@ body {
 	position: absolute;
 	top: 100%;
 	left: 0;
-    right: 0;
     text-align: center;
 	display: none;
 }
@@ -125,11 +124,11 @@ body {
 }
 .header_submenu_item {
     position: relative;
+    margin: 0 0 2px;
 }
 .header_submenu_2 {
     position: absolute;
 	top: 0;
-	left: -100%;
     right: 100%;
     text-align: center;
 	display: none;
@@ -139,16 +138,19 @@ body {
 }
 .header_submenu_item a {
 	color: #000000;
-	padding: 5px;
+	padding: 10px 20px;
 	display: block;
     background: rgba(33, 150, 243, 0.3);
     border-radius: 4px;
-    margin: 1%;
+}
+
+.header_submenu_hover {
+    margin-right: 2px;
 }
 
 .header_submenu_hover a {
     color: #000000;
-	padding: 5px;
+	padding: 10px 20px;
 	display: block;
     background: rgba(87, 170, 237, 0.3);
 }
