@@ -70,6 +70,8 @@ body {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
+    position: relative;
+    z-index: 1;
 }
 
 .header a {
@@ -112,34 +114,40 @@ body {
 .header_sub {
     position: relative;
 }
+
 .header_submenu {
-	position: absolute;
-	top: 100%;
-	left: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
     text-align: center;
-	display: none;
+    display: none;
 }
+
 .header_sub:hover .header_submenu {
     display: block;
 }
+
 .header_submenu_item {
     position: relative;
     margin: 0 0 2px;
 }
+
 .header_submenu_2 {
     position: absolute;
-	top: 0;
+    top: 0;
     right: 100%;
     text-align: center;
-	display: none;
+    display: none;
 }
+
 .header_submenu_item:hover .header_submenu_2 {
     display: block;
 }
+
 .header_submenu_item a {
-	color: #000000;
-	padding: 10px 20px;
-	display: block;
+    color: #000000;
+    padding: 10px 20px;
+    display: block;
     background: rgba(33, 150, 243, 0.3);
     border-radius: 4px;
 }
@@ -150,19 +158,27 @@ body {
 
 .header_submenu_hover a {
     color: #000000;
-	padding: 10px 20px;
-	display: block;
+    padding: 10px 20px;
+    display: block;
     background: rgba(87, 170, 237, 0.3);
 }
 
 /* Hero */
 .hero {
     height: 600px;
-    background: #2F303A;
     color: #fff;
     display: flex;
     align-items: center;
     text-align: center;
+    background: url('../img/fon.jpg') no-repeat center/cover;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(47, 48, 58, 0.4);
 }
 
 .hero_title {
@@ -183,6 +199,8 @@ body {
     text-align: center;
     width: 200px;
     height: 50px;
+    position: relative;
+    z-index: 1;
 }
 
 /* About */
@@ -197,6 +215,30 @@ body {
 
 .about_card {
     flex: 1 1 25%;
+    position: relative;
+    padding-top: 150px;
+}
+
+.about_card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: #f5f4fa url(../img/1_antenna.png) no-repeat center/70px;
+}
+
+.about_card:nth-child(2)::before {
+    background-image: url(../img/2_clock.png);
+}
+
+.about_card:nth-child(3)::before {
+    background-image: url(../img/3_diagram.png);
+}
+
+.about_card:nth-child(4)::before {
+    background-image: url(../img/4_astronaut.png);
 }
 
 .about_card_title {
@@ -268,23 +310,40 @@ body {
 }
 
 .team_card {
-    height: 100%;
-    background: #fff;
+    flex: 1 1 25%;
+    height: 428px;
     font-size: 16px;
     letter-spacing: 0.03em;
     text-align: center;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     border-radius: 0 0 4px 4px;
+    position: relative;
+    padding-top: 300px;
+    background: #FFFFFF;
 }
 
-.team_img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
+.team_card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    height: 270px;
+    background: grey url(../img/img_1.jpg) no-repeat center/cover;
+}
+
+.team_card:nth-child(2)::before {
+    background-image: url(../img/img_2.jpg);
+}
+
+.team_card:nth-child(3)::before {
+    background-image: url(../img/img_3.jpg);
+}
+
+.team_card:nth-child(4)::before {
+    background-image: url(../img/img_4.jpg);
 }
 
 .team_title {
-    padding: 24px;
+    padding: 0 24px 24px;
 }
 
 .team_name {
@@ -296,17 +355,111 @@ body {
 .team_prof {
     font-weight: 400;
     color: #757575;
+    margin-bottom: 16px;
+}
+
+.team_list {
+    display: flex;
+    gap: 10px;
+}
+
+.team_link {
+    flex: 1 1 25%;
+    position: relative;
+    height: 44px;
+    width: 44px;
+}
+
+.team_link a {
+    position: absolute;
+    inset: 0;
+    padding: 12px;
+    background: #FFFFFF url(../img/instagram\ 2.svg) no-repeat center;
+    transition: 0.2s;
+}
+
+.team_link:nth-child(2) a {
+    background-image: url(../img/twitter\ 1.svg);
+}
+
+.team_link:nth-child(3) a {
+    background-image: url(../img/facebook\ 1.svg);
+}
+
+.team_link:nth-child(4) a {
+    background-image: url(../img/linkedin\ 1.svg);
+}
+
+.team_link a:hover {
+    background-color: #2196F3;
+    border-radius: 50%;
+}
+
+/* Regular customers */
+
+.customers {
+    padding: 94px 0;
+    background: #FFFFFF;
+}
+
+.customers_cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.customers_cards a {
+    flex: 1 1 10%;
+    height: 92px;
+    width: 10px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 10px;
+    background: #fff url(../img/group1.png) no-repeat center;
+}
+
+.customers_cards a:nth-child(2) {
+    background-image: url(../img/group2.png);
+}
+
+.customers_cards a:nth-child(3) {
+    background-image: url(../img/group3.png);
+}
+
+.customers_cards a:nth-child(4) {
+    background-image: url(../img/group4.png);
+}
+
+.customers_cards a:nth-child(5) {
+    background-image: url(../img/group5.png);
+}
+
+.customers_cards a:nth-child(6) {
+    background-image: url(../img/group6.png);
+}
+
+.customers_cards a:hover {
+    background-color: rgba(33, 150, 243, .2);
 }
 
 /* Footer */
 .footer {
     background: #2f303a;
-    height: 252px;
+}
+
+.footer_container {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    padding: 60px;
+    
+}
+
+.footer_1 {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.03em;
-    padding: 60px;
-
+    width: 231px;
 }
 
 .footer_logo {
@@ -331,6 +484,47 @@ body {
 .footer_contacts a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer_2 {
+    text-transform: uppercase;
+}
+
+.footer_2 h3 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    height: 44px;
+    width: 206px;
+}
+
+.footer_icons a {
+    flex: 1 1 10%;
+    border-radius: 50px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1) url(../img/foot1.png) no-repeat center/44px;
+}
+
+.footer_icons a:nth-child(2) {
+    background-image: url(../img/foot2.png);
+}
+
+.footer_icons a:nth-child(3) {
+    background-image: url(../img/foot3.png);
+}
+
+.footer_icons a:nth-child(4) {
+    background-image: url(../img/foot4.png);
+}
+
+.footer_icons a:hover {
+    background-color: rgba(3, 135, 244, 0.8);
 }
 
 /* portfolio */
