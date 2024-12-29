@@ -71,7 +71,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header a {
@@ -172,6 +172,7 @@ body {
     text-align: center;
     background: url('../img/fon.jpg') no-repeat center/cover;
     position: relative;
+    z-index: 1;
 }
 
 .hero::after {
@@ -179,6 +180,7 @@ body {
     position: absolute;
     inset: 0;
     background: rgba(47, 48, 58, 0.4);
+    z-index: -1;
 }
 
 .hero_title {
@@ -225,7 +227,6 @@ body {
     inset: 0;
     height: 120px;
     border-radius: 4px;
-    margin-bottom: 30px;
     background: #f5f4fa url(../img/1_antenna.png) no-repeat center/70px;
 }
 
@@ -361,21 +362,16 @@ body {
 .team_list {
     display: flex;
     gap: 10px;
-}
-
-.team_link {
-    flex: 1 1 25%;
-    position: relative;
-    height: 44px;
-    width: 44px;
+    justify-content: center;
 }
 
 .team_link a {
-    position: absolute;
-    inset: 0;
-    padding: 12px;
+    height: 44px;
+    width: 44px;
+    display: block;
     background: #FFFFFF url(../img/instagram\ 2.svg) no-repeat center;
     transition: 0.2s;
+    border-radius: 50px;
 }
 
 .team_link:nth-child(2) a {
@@ -411,7 +407,6 @@ body {
 .customers_cards a {
     flex: 1 1 10%;
     height: 92px;
-    width: 10px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 10px;
@@ -499,15 +494,12 @@ body {
 .footer_icons {
     display: flex;
     gap: 10px;
-    justify-content: center;
-    height: 44px;
-    width: 206px;
 }
 
 .footer_icons a {
-    flex: 1 1 10%;
     border-radius: 50px;
-    padding: 10px;
+    width: 44px;
+    height: 44px;
     background: rgba(255, 255, 255, 0.1) url(../img/foot1.png) no-repeat center/44px;
 }
 
