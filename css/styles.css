@@ -344,10 +344,6 @@ body {
   background-image: url(../img/img_4.jpg);
 }
 
-.team_title {
-  padding: 0 24px 24px;
-}
-
 .team_title h3 {
   font-weight: 500;
   color: #212121;
@@ -361,16 +357,19 @@ body {
 }
 
 .team_list {
-    width: 206px;
-    height: 44px;
+  height: 44px;
   display: flex;
   gap: 10px;
   justify-content: center;
-  
+}
+
+.team_list a {
+  display: block;
+  border-radius: 50%;
 }
 
 .tean_link_icon {
-    flex: 1 1 10%;
+  flex: 1 1 10%;
   width: 44px;
   height: 44px;
   fill: #afb1b8;
@@ -378,10 +377,11 @@ body {
   align-items: center;
   border-radius: 50%;
 }
-.tean_link_icon:hover {
+
+.team_list a:hover .tean_link_icon {
   fill: #ffffff;
   background-color: #2196f3;
-  transition: fill 0.3s;
+  transition: all 0.3s;
 }
 
 /* Regular customers */
@@ -392,34 +392,36 @@ body {
 }
 
 .customers_cards {
-    display: flex;
-    gap: 30px;
-  }
-  
-  .customers_card_icon {
-    border: 2px solid #AFB1B8;
-    border-radius: 4px;
-      height: 92px;
-      flex: 1 1 15%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all .3s linear;
-  }
-  .group {
-    width: 106px;
-      height: 60px;
-      fill: #AFB1B8;
-      transition: all 0.3s;
-  }
-  .customers_card_icon:hover {
-    border: 2px solid #2196F3;
-    
-  }
-  .group:hover {
-    fill: #2196F3;
-    transition: fill 0.3s;
-  }
+  display: flex;
+  gap: 30px;
+}
+
+.customers_card_icon {
+  border: 2px solid #afb1b8;
+  border-radius: 4px;
+  height: 92px;
+  flex: 1 1 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
+.group {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition: all 0.3s;
+}
+
+.customers_card_icon:hover {
+  border: 2px solid #2196f3;
+}
+
+.customers_card_icon:hover .group {
+  fill: #2196f3;
+  transition: all 0.3s;
+}
 
 /* Footer */
 .footer {
@@ -475,28 +477,29 @@ body {
 }
 
 .footer_nav {
-    width: 206px;
-    height: 44px;
+  width: 206px;
+  height: 44px;
   display: flex;
   gap: 10px;
   justify-content: center;
-  
 }
 
 .footer_icon {
-    flex: 1 1 10%;
+  flex: 1 1 10%;
   width: 44px;
   height: 44px;
   fill: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
-.footer_icon:hover {
+
+.footer_nav a:hover {
   fill: #ffffff;
   background-color: #2196f3;
   transition: fill 0.3s;
+  border-radius: 50%;
 }
 
 /* portfolio */
