@@ -311,36 +311,23 @@ body {
 
 .team_card {
   flex: 1 1 25%;
-  height: 428px;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0 0 4px 4px;
-  position: relative;
-  padding-top: 300px;
   background: #ffffff;
 }
 
-.team_card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  height: 270px;
-  background: grey url(../img/img_1.jpg) no-repeat center/cover;
+.team_card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
 
-.team_card:nth-child(2)::before {
-  background-image: url(../img/img_2.jpg);
-}
-
-.team_card:nth-child(3)::before {
-  background-image: url(../img/img_3.jpg);
-}
-
-.team_card:nth-child(4)::before {
-  background-image: url(../img/img_4.jpg);
+.team_title {
+  padding: 30px 31px 27px;
 }
 
 .team_title h3 {
@@ -356,7 +343,6 @@ body {
 }
 
 .team_list {
-  height: 44px;
   display: flex;
   gap: 10px;
   justify-content: center;
