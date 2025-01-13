@@ -72,6 +72,8 @@ body {
   letter-spacing: 0.02em;
   position: relative;
   z-index: 2;
+  /*  */
+  background: #fff;
 }
 
 .header a {
@@ -173,6 +175,8 @@ body {
   background: url("../img/fon.jpg") no-repeat center/cover;
   position: relative;
   z-index: 1;
+  /*  */
+  /* margin-top: 80px; */
 }
 
 .hero::after {
@@ -189,7 +193,7 @@ body {
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  max-width: 696px;
   height: 120px;
   margin-bottom: 30px;
 }
@@ -212,10 +216,11 @@ body {
 .about_cards {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .about_card {
-  flex: 1 1 25%;
+  flex: 1 1 22%;
   position: relative;
   padding-top: 150px;
 }
@@ -307,6 +312,8 @@ body {
 .team_cards {
   display: flex;
   gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .team_card {
@@ -318,6 +325,7 @@ body {
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0 0 4px 4px;
   background: #ffffff;
+  max-width: 270px;
 }
 
 .team_card img {
@@ -393,7 +401,7 @@ body {
 }
 
 .group {
-  width: 106px;
+  max-width: 106px;
   height: 60px;
   fill: #afb1b8;
   transition: all 0.3s;
@@ -424,7 +432,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
-  width: 231px;
+  max-width: 231px;
 }
 
 .footer_logo {
@@ -462,7 +470,7 @@ body {
 }
 
 .footer_nav {
-  width: 206px;
+  max-width: 206px;
   height: 44px;
   display: flex;
   gap: 10px;
@@ -581,4 +589,76 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   line-height: 30px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .team_cards {
+    max-width: 715px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+
+  .team_card {
+    max-width: 320px;
+  }
+
+  .team_title {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header_logo {
+    margin-right: 30px;
+  }
+
+  .header_list,
+  .header_contacts {
+    gap: 20px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .about,
+  .team,
+  .customers {
+    padding: 30px 0;
+  }
+
+  .about_card {
+    flex: 1 1 35%;
+    padding-top: 130px;
+  }
+
+  .doing {
+    padding: 0 0 30px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .team_title {
+    padding: 10px;
+  }
+
+  .customers {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+
+  .customers_cards {
+    flex-wrap: wrap;
+  }
+
+  .customers_card_icon {
+    flex: 1 1 25%;
+  }
+
+  .footer_container {
+    padding: 30px;
+  }
 }
