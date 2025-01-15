@@ -17,39 +17,49 @@
         <img src="img/logo_header.svg" alt="Web Studio" width="145" height="31" />
       </a>
       <!-- Menu -->
-      <ul class="header_list">
-        <li>
-          <a class="active" href="index.html">Studio</a>
-        </li>
-        <li>
-          <a href="portfolio.html">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contacts</a>
-        </li>
-        <li class="header_sub">
-          <a href="#">Submenu</a>
-          <ul class="header_submenu">
-            <li class="header_submenu_item">
-              <a href="#">Menu</a>
-            </li>
-            <li class="header_submenu_item">
-              <a href="#">Menu</a>
-            </li>
-            <li class="header_submenu_item">
-              <a href="#">Menu</a>
-            </li>
-            <li class="header_submenu_item">
-              <a href="#">Hover</a>
-              <ul class="header_submenu_2">
-                <li class="header_submenu_hover">
-                  <a href="">HOVER</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <input type="checkbox" id="menu_toggle" class="menu_toggle" />
+      <label for="menu_toggle" class="burger" aria-label="Toggle menu">
+        <svg class="icon-burger">
+          <use href="img/sprite.svg#icon-burger"></use>
+        </svg>
+      </label>
+
+      <nav class="header_nav">
+        <ul class="header_list">
+          <li>
+            <a class="active" href="index.html">Studio</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Contacts</a>
+          </li>
+          <li class="header_sub">
+            <a href="#">Submenu</a>
+            <ul class="header_submenu">
+              <li class="header_submenu_item">
+                <a href="#">Menu</a>
+              </li>
+              <li class="header_submenu_item">
+                <a href="#">Menu</a>
+              </li>
+              <li class="header_submenu_item">
+                <a href="#">Menu</a>
+              </li>
+              <li class="header_submenu_item">
+                <a href="#">Hover</a>
+                <ul class="header_submenu_2">
+                  <li class="header_submenu_hover">
+                    <a href="">HOVER</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
       <!-- Contacts -->
       <div class="header_contacts">
         <a class="active" href="mailto:info@devstudio.com">info@devstudio.com</a>
